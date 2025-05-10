@@ -1,0 +1,71 @@
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: fixed;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 500;
+  font-size: 20px;
+  
+  background-color: rgba(0, 0, 0, 0.2); /* Black with 20% opacity */
+  box-shadow: none;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#root > div > div > button > span {
+  position: relative;
+}
+
+.bg-green {
+  background-color: #9B9B76;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.menu1:after,
+.menu1:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+.menu1:after {
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.menu1:before {
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.menu1:hover::before,
+.menu1:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: #fff;
+}
