@@ -1,13 +1,17 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./styles.css";
-import { Button, IconButton } from "@material-tailwind/react";
+import { IconButton } from "@material-tailwind/react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { pages } from "../../helpers/linksHelper";
 
 interface NavLinksProps {
   url: string;
   link_name: string;
+}
+
+interface NavbarProps {
+  forceBackground?: boolean;
 }
 
 function NavItem({ url, link_name }: NavLinksProps) {
@@ -20,15 +24,29 @@ function NavItem({ url, link_name }: NavLinksProps) {
   );
 }
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+  const location = useLocation();
 
+  // Fecha o menu ao mudar de rota
   useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
+  // Controla a opacidade da navbar com scroll ou forçado por prop
+  useEffect(() => {
+    if (forceBackground) {
+      setIsScrolling(true);
+      return;
+    }
+
     const handleScroll = () => setIsScrolling(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
+    handleScroll(); // inicializa com o valor atual
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [forceBackground]);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -52,9 +70,9 @@ const Navbar: React.FC = () => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-2">
-          <Button variant="text" color="white" placeholder="">
-            Responder
-          </Button>
+          <Link to="/confirmacao-presenca" className="text-lg font-bold text-white font-dancing-script">
+            Confirmação de presença
+          </Link>
         </div>
 
         <IconButton
@@ -75,11 +93,6 @@ const Navbar: React.FC = () => {
               <NavItem key={id} url={href} link_name={page} />
             ))}
           </ul>
-          <div className="mt-4 flex justify-center">
-            <Button variant="text" color="white" placeholder="">
-              Responder
-            </Button>
-          </div>
         </div>
       )}
     </div>

@@ -8,6 +8,7 @@ import RootLayout from "./components/RootLayout.tsx";
 import Home from './pages/Home.tsx'
 
 import "./index.css";
+import ConfirmacaoPresenca from "./pages/rspv.tsx";
 
 const router = createHashRouter([
   {
@@ -19,6 +20,7 @@ const router = createHashRouter([
       { path: "trajes", element: <Trajes /> },
       { path: "pre-wedding", element: <PreWedding /> },
       { path: "presentes", element: <Presentes /> },
+      { path: "confirmacao-presenca", element: <ConfirmacaoPresenca /> },
     ],
   },
 ]);
