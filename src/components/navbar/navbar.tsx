@@ -77,6 +77,7 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
 
         <IconButton
           variant="text"
+          id="toggle-menu"
           onClick={handleToggle}
           className="ml-auto inline-block lg:hidden text-white"
           title="Toggle menu"
@@ -92,6 +93,7 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
             {pages.map(({ id, page, href }) => (
               <NavItem key={id} url={href} link_name={page} />
             ))}
+            <NavItem key={"confirmacao-presenca"} url={"/confirmacao-presenca"} link_name={"Confirmação de presença"} />
           </ul>
         </div>
       )}

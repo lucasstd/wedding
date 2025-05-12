@@ -15,14 +15,7 @@ const Trajes: React.FC = () => {
         >
           Dicas de Traje
         </h1>
-        <div className="w-20 h-1 bg-teal-500 mx-auto mt-4 rounded-full mb-10" />
-
-        <div className="mt-12 mb-12 bg-[#e8c3c3] bg-opacity-50 p-8 rounded-md shadow-lg text-center">
-          <p className="text-xl">
-            <strong className="text-rose-400">Atenção:</strong> Pedimos que as mulheres evitem roupas brancas.
-          </p>
-        </div>
-
+        <div className="w-20 h-1 bg-rose-400 mx-auto mt-4 rounded-full mb-10" />
         <div className="bg-white bg-opacity-5 p-8 rounded-xl shadow-xl flex flex-col md:flex-row gap-10 items-center">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full md:w-1/2">
             <img
@@ -72,6 +65,12 @@ const Trajes: React.FC = () => {
           </div>
         </div>
       </div>
+      
+        <div className="mt-5 bg-[#e8c3c3] bg-opacity-50 p-8 rounded-md shadow-lg text-center">
+          <p className="text-xl">
+            <strong className="text-rose-400">Atenção:</strong> Pedimos que as mulheres não usem roupas brancas.
+          </p>
+        </div>
     </div>
     </>
   );
