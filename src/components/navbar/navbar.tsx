@@ -17,7 +17,10 @@ interface NavbarProps {
 function NavItem({ url, link_name }: NavLinksProps) {
   return (
     <li className="menu1">
-      <Link to={url} className="flex items-center gap-2 font-medium">
+      <Link
+        to={url}
+        className="flex items-center gap-2 font-medium text-white drop-shadow-lg hover:text-teal-400 hover:scale-105 transition-all duration-300"
+      >
         {link_name}
       </Link>
     </li>
@@ -29,12 +32,10 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
   const [isScrolling, setIsScrolling] = useState(false);
   const location = useLocation();
 
-  // Fecha o menu ao mudar de rota
   useEffect(() => {
     setIsOpen(false);
   }, [location]);
 
-  // Controla a opacidade da navbar com scroll ou forçado por prop
   useEffect(() => {
     if (forceBackground) {
       setIsScrolling(true);
@@ -43,7 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
 
     const handleScroll = () => setIsScrolling(window.scrollY > 0);
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // inicializa com o valor atual
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [forceBackground]);
@@ -55,14 +56,17 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
   return (
     <div
       className={`fixed top-0 z-50 w-full text-white ${
-        isScrolling ? "bg-gray-900" : "bg-transparent"
+        isScrolling ? "bg-gray-900/80 backdrop-blur-sm" : "bg-transparent"
       } transition-all`}
     >
       <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
-        <Link to="/" className="text-lg font-bold text-white font-dancing-script">
+        <Link
+          to="/"
+          className="text-lg font-bold text-white font-dancing-script drop-shadow-lg hover:text-teal-400 hover:scale-105 transition-all duration-300"
+        >
           Anne & Lucas
         </Link>
-        
+
         <ul className="hidden lg:flex items-center gap-6">
           {pages.map(({ id, page, href }) => (
             <NavItem key={id} url={href} link_name={page} />
@@ -70,7 +74,10 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-2">
-          <Link to="/confirmacao-presenca" className="text-lg font-bold text-white font-dancing-script">
+          <Link
+            to="/confirmacao-presenca"
+            className="text-lg font-bold text-white font-dancing-script drop-shadow-lg hover:text-teal-400 hover:scale-105 transition-all duration-300"
+          >
             Confirmação de presença
           </Link>
         </div>
@@ -79,7 +86,7 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
           variant="text"
           id="toggle-menu"
           onClick={handleToggle}
-          className="ml-auto inline-block lg:hidden text-white"
+          className="ml-auto inline-block lg:hidden text-white drop-shadow-lg hover:text-teal-400 transition-all duration-300"
           title="Toggle menu"
           placeholder=""
         >
@@ -88,7 +95,7 @@ const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden bg-gray-800 py-4 px-6 border-t border-gray-200">
+        <div className="lg:hidden bg-gray-800/90 py-4 px-6 border-t border-gray-200">
           <ul className="flex flex-col items-center gap-4">
             {pages.map(({ id, page, href }) => (
               <NavItem key={id} url={href} link_name={page} />
