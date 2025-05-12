@@ -27,7 +27,7 @@ function NavItem({ url, link_name }: NavLinksProps) {
   );
 }
 
-const Navbar: React.FC<NavbarProps> = ({ forceBackground = false }) => {
+const Navbar: React.FC<NavbarProps> = ({ forceBackground = true }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
   const location = useLocation();

@@ -1,11 +1,21 @@
-import "./styles.css";
 import SectionTitle from "../../components/sectionTitle/sectionTitle";
+import { motion } from "framer-motion";
+import "./styles.css";
 
 export function StorySection() {
   return (
-    <section id="story-section" className="container flex flex-col md:flex-row gap-20 py-12 px-8">
-      <div className="mx-auto max-w-screen-md">
-        <SectionTitle  subTitle="Nossa História" sectionTitle="Trajetória" />
+    <section
+      id="story-section"
+      className="container flex flex-col md:flex-row gap-20 py-12 px-8"
+    >
+      <motion.div
+        className="mx-auto max-w-screen-md"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      >
+        <SectionTitle subTitle="Nossa História" sectionTitle="Trajetória" />
 
         <p className="indent-6 font-normal !text-gray-500">
           Há cinco anos, nossas vidas se cruzaram de uma maneira que só o
@@ -27,8 +37,15 @@ export function StorySection() {
           fase da nossa história, e estamos ansiosos para tudo o que o futuro
           nos reserva.
         </p>
-      </div>
-      <div className="leftImage outlined"></div>
+      </motion.div>
+
+      <motion.div
+        className="leftImage outlined"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        viewport={{ once: true }}
+      />
     </section>
   );
 }

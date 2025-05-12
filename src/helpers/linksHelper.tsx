@@ -2,8 +2,8 @@ import { FaInstagram } from "react-icons/fa";
 
 export const pages = [
   { id: 0, page: "Trajes", href: "/trajes" },
-  { id: 1, page: "Pre-wedding", href: "/pre-wedding" },
-  { id: 2, page: "Lista de presentes", href: "/presentes" },
+  // { id: 1, page: "Pre-wedding", href: "/pre-wedding" },
+  // { id: 2, page: "Lista de presentes", href: "/presentes" },
 ];
 
 export const socialLinks = [
