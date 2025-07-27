@@ -1,70 +1,135 @@
-import { FaGift } from "react-icons/fa";
-import { gifts } from "../helpers/linksHelper";
+import giftsData from "../helpers/gifts.json";
 import Navbar from "../components/navbar/navbar";
+import { useState } from "react";
+
+
+type Gift = {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  badge?: string;
+};
 
 export default function Presentes() {
-  const qrCodeLink = "https://nubank.com.br/cobrar/h2ej3/68178723-7c78-4001-bb12-5286eadf226a";
+  const [sortType, setSortType] = useState<"price" | "name">("price");
+  const [filterText, setFilterText] = useState("");
+
+  // Converta giftsData para o tipo Gift[]
+  const gifts: Gift[] = giftsData;
+
+  const parsePrice = (price: string) =>
+    Number(price?.replace(/[^\d,]/g, "").replace(",", "."));
+
+  const filteredGifts = gifts
+    .filter(
+      (gift) =>
+        gift.name?.toLowerCase().includes(filterText.toLowerCase()) ||
+        gift.price?.toLowerCase().includes(filterText.toLowerCase())
+    )
+    .sort((a, b) => {
+      if (sortType === "price") {
+        return parsePrice(a.price) - parsePrice(b.price);
+      }
+      return a.name.localeCompare(b.name);
+    });
+
+  const qrCodeLink =
+    "https://nubank.com.br/cobrar/h2ej3/68178723-7c78-4001-bb12-5286eadf226a";
 
   return (
     <>
-    <Navbar forceBackground />
-    <div className="mt-10 min-h-screen bg-[#e5e7eb] w-full py-14 px-6">
-      <div className="relative w-full h-[450px] mb-16 rounded-xl overflow-hidden shadow-md">
-        <img
-          src="https://media.istockphoto.com/id/515679204/pt/foto/bal%C3%B5es-de-cora%C3%A7%C3%A3o-voando-no-c%C3%A9u.jpg"
-          alt="Banner de Balões"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 flex items-center justify-center text-white text-center px-6">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Lista de Presentes</h1>
-            <p className="text-lg max-w-2xl mx-auto">
-              Estamos animados para compartilhar nosso casamento com vocês! Optamos por uma lista de contribuições para nossa lua de mel, pensando nos momentos especiais que teremos juntos.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+      <Navbar forceBackground />
+      <div className="mt-10 min-h-screen w-full py-14 px-6 bg-up-light-orange font-sans">
+        <div className="text-center">
+      <h1 className="mt-10 text-gray-800 text-5xl mb-20">Ainda estamos ajustando esta página :(</h1>
           <h2
             className="text-5xl md:text-6xl text-gray-800 mt-2"
             style={{ fontFamily: "'Great Vibes', cursive" }}
           >
-            Lista de Presentes
+            Nossos Sonhos de Presente
           </h2>
-          <div className="w-20 h-1 bg-pink-400 mx-auto mt-4 rounded-full" />
+          <div className="w-24 h-1.5 bg-up-medium-orange mx-auto mt-1 rounded-full" />
         </div>
-
-        <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
-          Com muito carinho, selecionamos algumas ideias de presentes simbólicos. Caso deseje nos presentear, basta clicar em um dos cartões abaixo. 💝
+        <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
+          Com muito carinho, selecionamos algumas ideias de presentes simbólicos
+          para nossa nova jornada. Cada contribuição nos ajudará a construir
+          memórias inesquecíveis. Basta clicar em um dos cartões abaixo! 💝
         </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
+            <div className="flex gap-2 mb-4 md:mb-0">
+              <button
+                className={`px-4 py-2 rounded-lg border font-semibold ${
+                  sortType === "price"
+                    ? "bg-up-medium-orange text-white"
+                    : "bg-white text-up-medium-orange border-up-medium-orange"
+                } transition`}
+                onClick={() => setSortType("price")}
+              >
+                Ordenar por valor
+              </button>
+              <button
+                className={`px-4 py-2 rounded-lg border font-semibold ${
+                  sortType === "name"
+                    ? "bg-up-medium-orange text-white"
+                    : "bg-white text-up-medium-orange border-up-medium-orange"
+                } transition`}
+                onClick={() => setSortType("name")}
+              >
+                Ordenar por nome
+              </button>
+            </div>
+            <input
+              type="text"
+              placeholder="Filtrar por nome ou valor..."
+              value={filterText}
+              onChange={(e) => setFilterText(e.target.value)}
+              className="border border-up-medium-orange rounded-lg px-4 py-2 w-full md:w-1/2"
+            />
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
-          {gifts.map((gift) => (
-            <a
-              key={gift.id}
-              href={qrCodeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300 bg-white border border-gray-100"
-            >
-              <img
-                src={gift.image}
-                alt={gift.name}
-                className="w-full h-52 object-cover"
-              />
-              <div className="p-5">
-                <h3 className="text-xl font-semibold text-gray-800 flex items-center gap-2 mb-2">
-                  <FaGift className="text-pink-400" /> {gift.name}
-                </h3>
-                <p className="text-sm text-gray-600">{gift.price}</p>
-              </div>
-            </a>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+            {filteredGifts.map((gift) => (
+              <a
+                key={gift.id}
+                href={qrCodeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-white border border-up-medium-orange/40 h-full"
+              >
+                <div className="relative flex-grow">
+                  {gift.badge && (
+                    <span className="absolute top-2 left-2 bg-up-medium-orange text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">
+                      {gift.badge}
+                    </span>
+                  )}
+                  <img
+                    loading="lazy"
+                    src={gift.image}
+                    alt={gift.name}
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300" // Adicionado zoom no hover
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>{" "}
+                </div>
+
+                <div className="p-5 flex flex-col justify-between flex-grow-0">
+                  <div>
+                    <h3 className="text-xl text-center font-semibold text-gray-800 flex items-center gap-2 mb-2">
+                      {gift.name}
+                    </h3>
+                  </div>
+                  <div className="mt-auto text-center pt-3 border-t border-gray-100">
+                    <p className="text-2xl font-extrabold" style={{ color: "#b97a56" }}>
+                      {gift.price}
+                    </p>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 }

@@ -5,6 +5,7 @@ export default function ConfirmacaoPresenca() {
     <>
       <Navbar forceBackground />
       <iframe
+        title="confirmacao-presenca"
         src="https://forms.gle/47ZxVPn2D7H9eeg88"
         width="100%"
         height="800"

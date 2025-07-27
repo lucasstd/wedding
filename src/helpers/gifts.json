@@ -1,0 +1,183 @@
+[
+  {
+    "id": 1,
+    "name": "1 ano de Netflix para os noivos curtirem",
+    "price": "R$ 538,80",
+    "image": "https://casa.abril.com.br/wp-content/uploads/2016/11/netflix-tv-770x598-770x598.jpeg?crop=1&resize=1212,909"
+  },
+  {
+    "id": 2,
+    "name": "Adote um boletinho atrasado, tem de várias cores, vocês não vão se arrepender",
+    "price": "R$ 198,57",
+    "image": "https://img.elo7.com.br/product/300x400/3FCC069/quadro-frase-pense-como-um-boleto-quadro-frase-boleto.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ajuda na aposentadoria do noivo, tá com a vista cansada coitado...",
+    "price": "R$ 404,25",
+    "image": "https://static.recadosface.com/imagens/turboscraps/divertidos/meu-cofrinho.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ajuda na aposentadoria da noiva... A coluna tá cobrando.",
+    "price": "R$ 404,25",
+    "image": "https://i.pinimg.com/736x/6e/a2/33/6ea2338c639d6370ef74e98466b6f131.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Alexa (para a noiva não mandar sozinha no noivo)",
+    "price": "R$ 519,00",
+    "image": "https://m.media-amazon.com/images/I/71vkiZAl8wL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Corte do cabelo do noivo por 1 ano",
+    "price": "R$ 540,00",
+    "image": "https://i.pinimg.com/736x/82/57/f5/8257f51fe6a62e9060e772948fd850da.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Prioridade na fila do Buffet",
+    "price": "R$ 184,50",
+    "image": "https://i.pinimg.com/736x/6e/a2/33/6ea2338c639d6370ef74e98466b6f131.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Só para dizer que não dei nada #fiz minha parte",
+    "price": "R$ 99,99",
+    "image": "https://i.pinimg.com/736x/89/8a/4c/898a4c8fa86019515e455e5dfaa9308f.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Taxa para a noiva não jogar o buquet na direção da sua namorada",
+    "price": "R$ 195,35",
+    "image": "https://casacomidaeroupaespalhada.com/wp-content/uploads/2016/01/formas_jogar_buque_corac3a7c3a3o_01.jpg?w=449&h=299"
+  },
+  {
+    "id": 10,
+    "name": "Aumentar em 20% a taxa de jogar o buquet para sua namorada",
+    "price": "R$ 61,20",
+    "image": "https://casacomidaeroupaespalhada.com/wp-content/uploads/2016/01/formas_jogar_buque_corac3a7c3a3o_01.jpg?w=449&h=299"
+  },
+  {
+    "id": 11,
+    "name": "Ajudar a esvaziar o carrinho da Shein da noiva",
+    "price": "R$ 598,12",
+    "image": "https://sitetray.s3.amazonaws.com/wp-content/uploads/sites/2/2023/11/devolver-produto-shein-300x199.png"
+  },
+  {
+    "id": 12,
+    "name": "Cota para perguntar quando vem os filhos",
+    "price": "R$ 624,18",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Pagar a paciência da noiva",
+    "price": "R$ 1.090,20",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 14,
+    "name": "DEI O MELHOR PRESENTE",
+    "price": "R$ 3.800,14",
+    "badge": "Favorito",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Autorização para jogar vinho no vestido de quem for de branco/creme/bege",
+    "price": "R$ 1,00",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Caixa de ferramentas para o noivo trocar o chuveiro",
+    "price": "R$ 122,30",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Dia off da noiva com as amigas",
+    "price": "R$ 251,20",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Dia off do noivo com os amigos",
+    "price": "R$ 251,20",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Contribuição para alguém ficar rico no jogo da vida",
+    "price": "R$ 171,40",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Noite de jogos patrocinada pelos amigos",
+    "price": "R$ 325,40",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Sachê pro gatinho aturar o jogo e não derrubar o tabuleiro",
+    "price": "R$ 125,30",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Noite do casal jogando boliche",
+    "price": "R$ 305,40",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 23,
+    "name": "1 ano de ovo pra não faltar mistura",
+    "price": "R$ 326,50",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Ajuda no investimento pro tigrinho",
+    "price": "R$ 223,50",
+    "image": "https://s2-valor.glbimg.com/T0li_MFk_BVay4hdUFRhEpImmxc=/0x0:1280x720/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2024/q/I/DTvoWlSielEAGGg3T1EQ/descubra-tudo-sobre-o-jogo-de-cassino-fortune-tiger-e-seus-segredos.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Diária do Hotel na Noite de Nupcias",
+    "price": "R$ 660,00",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Vale para a noiva deixar o noivo jogar video game em paxz",
+    "price": "R$ 183,00",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Cueca sexy para noite de nupcias",
+    "price": "R$ 95,00",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_709333-CBT80549043859_112024-O-pijama-tromba-de-elefante-pijama-curto-de-elefante.webp"
+  },
+  {
+    "id": 28,
+    "name": "Ração para a Guardiâ da casa",
+    "price": "R$ 245,00",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Lingerie especial para a noite de nupcias",
+    "price": "R$ 325,00",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Máscara para entrar no banheiro após o noivo",
+    "price": "R$ 195,24",
+    "image": "https://img.freepik.com/fotos-premium/homem-com-a-mascara-de-gas-segurando-flor-isolada-sobre-fundo-vermelho-influencia-da-radiacao-poluicao-ambiental-conceito-de-chernobyl-energia-nuclear-perigosa-desastre-ecologico_370059-3620.jpg"
+  }
+]

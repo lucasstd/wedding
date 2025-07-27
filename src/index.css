@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Merriweather', serif; /* Use a fallback font in case the Google Font fails to load */
+  background-color: #dceeea;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -57,7 +58,7 @@ table {
 }
 
 body {
-  color: #fffaf0;
+  color: #ede6d6;
 }
 
 .font-dancing-script {
