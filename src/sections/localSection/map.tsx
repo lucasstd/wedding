@@ -23,7 +23,7 @@ const MapSection: React.FC = () => {
       </p>
       <div className="text-center mb-6">
         <a
-          href="https://www.google.com/calendar/render?action=TEMPLATE&text=Casamento+Kay+e+Bruno&dates=20251122T180000Z/20251122T220000Z&details=Nosso+casamento+%E2%9D%A4+Esperamos+voc%C3%AA+para+celebrar+com+a+gente%21&location=Mirante+da+Lagoa,+Indai%C3%A1,+Florian%C3%B3polis&sf=true&output=xml"
+          href="https://www.google.com/calendar/render?action=TEMPLATE&text=Casamento+Anne+e+Lucas&dates=20251130T180000Z/20251130T220000Z&details=Nosso+casamento+%E2%9D%A4+Esperamos+voc%C3%AA+para+celebrar+com+a+gente%21&location=Mirante+da+Lagoa,+Indai%C3%A1,+Florian%C3%B3polis&sf=true&output=xml"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-emerald-200 text-emerald-900 text-sm md:text-base font-semibold px-6 py-3 rounded-full border border-emerald-300 hover:bg-emerald-300 transition-all duration-300 shadow-sm"
