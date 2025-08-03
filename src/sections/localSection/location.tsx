@@ -1,10 +1,10 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-import local1 from "../../assets/local1.png";
-import local2 from "../../assets/local2.png";
-import local3 from "../../assets/local3.png";
-import local4 from "../../assets/local4.png";
+import local1 from "../../assets/local1.webp";
+import local2 from "../../assets/local2.webp";
+import local3 from "../../assets/local3.webp";
+import local4 from "../../assets/local4.webp";
 
 const images = [local1, local2, local3, local4];
 

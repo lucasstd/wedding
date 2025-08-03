@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/navbar/navbar";
-import madrinhasImage from "../assets/vestidos-casamento-convidadas.jpg";
-import padrinhosImage from "../assets/traje2.jpg";
+import madrinhasImage from "../assets/candy_colors.webp";
+import padrinhosImage from "../assets/traje2.webp";
 import { FaCheckCircle } from "react-icons/fa";
 
 const cardVariants = {
@@ -154,11 +154,11 @@ const Trajes: React.FC = () => {
               >
                 Queremos que use o vestido que lhe agrade e que se sinta pronta
                 para essa jornada! Conforto é fundamental, então escolha um
-                vestido que você se sinta bem, na cor{" "}
-                <strong className="font-bold text-up-terracota">
-                  Terracota
+                vestido que você se sinta bem, nas cores{" "}
+                <strong className="font-bold">
+                  Candy Colors
                 </strong>
-                , a cor do pôr do sol e das grandes aventuras!
+                , as cores das grandes aventuras!
               </motion.p>
               <motion.p
                 variants={listItemVariants}
@@ -194,7 +194,7 @@ const Trajes: React.FC = () => {
               <img
                 loading="lazy"
                 src={padrinhosImage}
-                alt="Padrinhos com ternos pretos e camisas brancas"
+                alt="Convidados com roupas sociais esportivas"
                 className="rounded-xl object-cover w-full h-auto shadow-md border-4 border-up-medium-orange/30"
               />
             </motion.div>
@@ -207,7 +207,7 @@ const Trajes: React.FC = () => {
                 className="text-4xl md:text-5xl text-gray-800 mb-4"
                 style={{ fontFamily: "'Great Vibes', cursive" }}
               >
-                Nossos Padrinhos Exploradores
+                Para Todos os Convidados
               </motion.h2>
               <motion.p
                 variants={listItemVariants}
@@ -216,9 +216,8 @@ const Trajes: React.FC = () => {
                 viewport={{ once: true, amount: 0.5 }}
                 className="text-base mb-4 leading-relaxed"
               >
-                Para você ficar ainda mais elegante para essa grande expedição,
-                neste dia gostaríamos que os convidados usem uma roupa social
-                esportivo, contendo uma camisa social.
+                Todos os convidados estão convidados a celebrar conosco usando o traje <strong className="font-bold">social esportivo</strong> que acharem mais confortável! 
+                Não é necessário gravata ou blazer — o importante é que você se sinta bem para curtir, dançar e viver esse momento especial ao nosso lado.
               </motion.p>
               <motion.p
                 variants={listItemVariants}
@@ -228,9 +227,7 @@ const Trajes: React.FC = () => {
                 transition={{ delay: 0.2 }}
                 className="text-base leading-relaxed"
               >
-                E para deixar todos os nossos exploradores mais confortáveis e
-                prontos para a diversão, não é necessário o uso de gravata e
-                blazer! A liberdade é parte da aventura!
+                Sinta-se à vontade para escolher as cores e peças que mais combinam com você, respeitando apenas o estilo social esportivo. O conforto e a alegria são os trajes principais da nossa festa!
               </motion.p>
             </div>
           </div>

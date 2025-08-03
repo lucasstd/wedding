@@ -1,5 +1,5 @@
 import React from "react";
-import upIcon from "../../assets/up.png";
+import upIcon from "../../assets/up.webp";
 
 interface SectionTitleProps {
   sectionTitle: string;
