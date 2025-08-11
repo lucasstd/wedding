@@ -9,6 +9,7 @@ type Gift = {
   price: string;
   image: string;
   badge?: string;
+  objectFit?: 'cover' | 'contain';
 };
 
 export default function Presentes() {
@@ -42,7 +43,6 @@ export default function Presentes() {
       <Navbar forceBackground />
       <div className="mt-10 min-h-screen w-full py-14 px-6 bg-up-light-orange font-sans">
         <div className="text-center">
-      <h1 className="mt-10 text-gray-800 text-5xl mb-20">Ainda estamos ajustando esta página :(</h1>
           <h2
             className="text-5xl md:text-6xl text-gray-800 mt-2"
             style={{ fontFamily: "'Great Vibes', cursive" }}
@@ -54,27 +54,27 @@ export default function Presentes() {
         <p className="text-center text-lg text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
           Com muito carinho, selecionamos algumas ideias de presentes simbólicos
           para nossa nova jornada. Cada contribuição nos ajudará a construir
-          memórias inesquecíveis. Basta clicar em um dos cartões abaixo! 💝
+          memórias inesquecíveis. Basta clicar em um dos cartões abaixo!
         </p>
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-8">
-            <div className="flex gap-2 mb-4 md:mb-0">
+            <div className="flex gap-3 mb-4 md:mb-0">
               <button
-                className={`px-4 py-2 rounded-lg border font-semibold ${
-                  sortType === "price"
-                    ? "bg-up-medium-orange text-white"
-                    : "bg-white text-up-medium-orange border-up-medium-orange"
-                } transition`}
+                className={`px-5 py-2 rounded-full font-bold shadow-md border-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 hover:scale-105 
+                  ${sortType === "price"
+                    ? "bg-emerald-600 text-white border-emerald-600"
+                    : "bg-white text-emerald-600 border-emerald-600 hover:bg-emerald-50"}
+                `}
                 onClick={() => setSortType("price")}
               >
                 Ordenar por valor
               </button>
               <button
-                className={`px-4 py-2 rounded-lg border font-semibold ${
-                  sortType === "name"
-                    ? "bg-up-medium-orange text-white"
-                    : "bg-white text-up-medium-orange border-up-medium-orange"
-                } transition`}
+                className={`px-5 py-2 rounded-full font-bold shadow-md border-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400/60 hover:scale-105 
+                  ${sortType === "name"
+                    ? "bg-emerald-600 text-white border-emerald-600"
+                    : "bg-white text-emerald-600 border-emerald-600 hover:bg-emerald-50"}
+                `}
                 onClick={() => setSortType("name")}
               >
                 Ordenar por nome
@@ -96,7 +96,10 @@ export default function Presentes() {
                 href={qrCodeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 bg-white border border-up-medium-orange/40 h-full"
+                className="group flex flex-col rounded-2xl overflow-hidden shadow-lg bg-white border border-up-medium-orange/40 h-full transition-all duration-300 cursor-pointer
+                  hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-emerald-400/70 hover:ring-4 hover:ring-emerald-100/60
+                  focus:-translate-y-2 focus:scale-105 focus:shadow-2xl focus:border-emerald-400/70 focus:ring-4 focus:ring-emerald-100/60
+                  active:-translate-y-2 active:scale-105 active:shadow-2xl active:border-emerald-400/70 active:ring-4 active:ring-emerald-100/60"
               >
                 <div className="relative flex-grow">
                   {gift.badge && (
@@ -108,7 +111,8 @@ export default function Presentes() {
                     loading="lazy"
                     src={gift.image}
                     alt={gift.name}
-                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300" // Adicionado zoom no hover
+                    className={`w-full h-52 bg-white group-hover:scale-105 transition-transform duration-300 ${gift.objectFit === 'contain' ? 'object-contain' : 'object-cover'}`}
+                    style={{ maxHeight: 210, maxWidth: '100%' }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"></div>{" "}
                 </div>
@@ -120,9 +124,12 @@ export default function Presentes() {
                     </h3>
                   </div>
                   <div className="mt-auto text-center pt-3 border-t border-gray-100">
-                    <p className="text-2xl font-extrabold" style={{ color: "#b97a56" }}>
+                    <span
+                      className="inline-block px-8 py-2 rounded-lg font-bold shadow border border-[#b7eac2] bg-[#e6fbe9] text-[#09cb26] text-2xl mt-2 mb-1 select-none"
+                      style={{ letterSpacing: "0.5px" }}
+                    >
                       {gift.price}
-                    </p>
+                    </span>
                   </div>
                 </div>
               </a>
