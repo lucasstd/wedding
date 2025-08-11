@@ -71,14 +71,14 @@
     "id": 12,
     "name": "Cota para perguntar quando vem os filhos",
     "price": "R$ 624,18",
-    "image": "/src/assets/gifts_pic/filhos.webp",
+    "image": "/gifts_pic/filhos.webp",
     "objectFit": "contain"
   },
   {
     "id": 13,
     "name": "Pagar a paciência da noiva",
     "price": "R$ 1.090,20",
-    "image": "/src/assets/gifts_pic/noiva gastando.webp",
+    "image": "/gifts_pic/noiva gastando.webp",
     "objectFit": "contain"
   },
   {
@@ -86,56 +86,56 @@
     "name": "DEI O MELHOR PRESENTE",
     "price": "R$ 3.800,14",
     "badge": "Favorito",
-    "image": "/src/assets/gifts_pic/best.webp"
+    "image": "/gifts_pic/best.webp"
   },
   {
     "id": 15,
     "name": "Autorização para jogar vinho no vestido de quem for de branco/creme/bege",
     "price": "R$ 1,00",
-    "image": "/src/assets/gifts_pic/vinho.webp"
+    "image": "/gifts_pic/vinho.webp"
   },
   {
     "id": 16,
     "name": "Caixa de ferramentas para o noivo trocar o chuveiro",
     "price": "R$ 122,30",
-    "image": "/src/assets/gifts_pic/chuveiro.webp"
+    "image": "/gifts_pic/chuveiro.webp"
   },
   {
     "id": 17,
     "name": "Dia off da noiva com as amigas",
     "price": "R$ 251,20",
-    "image": "/src/assets/gifts_pic/amigas.webp"
+    "image": "/gifts_pic/amigas.webp"
   },
   {
     "id": 18,
     "name": "Dia off do noivo com os amigos",
     "price": "R$ 251,20",
-    "image": "/src/assets/gifts_pic/beber.webp"
+    "image": "/gifts_pic/beber.webp"
   },
   {
     "id": 19,
     "name": "Contribuição para alguém ficar rico no jogo da vida",
     "price": "R$ 171,40",
-    "image": "/src/assets/gifts_pic/jogo_da_vida.webp"
+    "image": "/gifts_pic/jogo_da_vida.webp"
   },
   {
     "id": 20,
     "name": "Noite de jogos patrocinada pelos amigos",
     "price": "R$ 325,40",
-    "image": "/src/assets/gifts_pic/jogos.webp",
+    "image": "/gifts_pic/jogos.webp",
     "objectFit": "contain"
   },
   {
     "id": 21,
     "name": "Noite do casal jogando boliche",
     "price": "R$ 305,40",
-    "image": "/src/assets/gifts_pic/boliche.webp"
+    "image": "/gifts_pic/boliche.webp"
   },
   {
     "id": 22,
     "name": "1 ano de ovo pra não faltar mistura",
     "price": "R$ 326,50",
-    "image": "/src/assets/gifts_pic/ovos.webp"
+    "image": "/gifts_pic/ovos.webp"
   },
   {
     "id": 23,
@@ -147,13 +147,13 @@
     "id": 24,
     "name": "Diária do Hotel na Noite de Nupcias",
     "price": "R$ 660,00",
-    "image": "/src/assets/gifts_pic/noite.webp"
+    "image": "/gifts_pic/noite.webp"
   },
   {
     "id": 25,
     "name": "Vale para a noiva deixar o noivo jogar video game em paz",
     "price": "R$ 183,00",
-    "image": "/src/assets/gifts_pic/game.webp"
+    "image": "/gifts_pic/game.webp"
   },
   {
     "id": 26,
@@ -165,13 +165,13 @@
     "id": 27,
     "name": "Ração para a Guardiâ da casa",
     "price": "R$ 245,00",
-    "image": "/src/assets/gifts_pic/phoebe.webp"
+    "image": "/gifts_pic/phoebe.webp"
   },
   {
     "id": 28,
     "name": "Lingerie especial para a noite de nupcias",
     "price": "R$ 325,00",
-    "image": "/src/assets/gifts_pic/lingerie.webp"
+    "image": "/gifts_pic/lingerie.webp"
   },
   {
     "id": 29,
@@ -183,18 +183,18 @@
     "id": 30,
     "name": "Lavadoura de roupas para o noivo não ficar sem roupa limpa",
     "price": "R$ 2800,00",
-    "image": "/src/assets/gifts_pic/louça.png"
+    "image": "/gifts_pic/louça.png"
   },
   {
     "id": 31,
     "name": "maquina de lavar louça para o noivo não ficar sem prato limpo",
     "price": "R$ 2600,24",
-    "image": "/src/assets/gifts_pic/lavar.png"
+    "image": "/gifts_pic/lavar.png"
   },
   {
     "id": 32,
     "name": "Ração para os gatos Guardiões da casa",
     "price": "R$ 245,00",
-    "image": "/src/assets/gifts_pic/gatos.webp"
+    "image": "/gifts_pic/gatos.webp"
   }
 ]
